@@ -7,6 +7,7 @@ import org.scalatra.ScalatraServlet
 import org.scalatra.Ok
 import org.scalatra.swagger.Swagger
 import com.wordnik.swagger.annotations.ApiProperty
+import com.wordnik.swagger.annotations.ApiClass
 
 object AssetServlet {
   final val Description = "The Assets API."
@@ -37,7 +38,7 @@ object Asset {
   final val UserDescription = "User that created this asset" 
 }
 
+@ApiClass(value = "Asset Model", description = "This is the class to model an Asset")
 case class Asset(
-  @ApiProperty(value = Asset.UserDescription) user: String,
-  masterId: Option[String] = None
+  @ApiProperty(value = Asset.UserDescription, allowableValues = "ed") user: String
 )
