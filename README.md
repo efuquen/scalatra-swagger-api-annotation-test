@@ -36,4 +36,6 @@ http://localhost:8080/swagger-specs/assets.json
 
 The correct output should be "User that created this asset", as specified on this line: 
 
-https://github.com/efuquen/scalatra-swagger-api-annotation-test/blob/master/src/main/scala/com/parascal/scalatra/swagger/test/AssetServlet.scala#L37
+https://github.com/efuquen/scalatra-swagger-api-annotation-test/blob/master/src/main/scala/com/parascal/scalatra/swagger/test/AssetServlet.scala#L38
+
+Though it's not tested for in the test case nothing is set for any of the annotations (i.e. the ApiClass description or the allowable values).
