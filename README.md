@@ -6,7 +6,7 @@ Currenty test case fails when checking description in the Asset mode, which is s
 [info] - should return a description for the user in the asset model *** FAILED **
 ```
 
-The issue is that the description property is "null" when doing a get request of the locally hosted server.  You can run the server by starting via the JettyBoot class, and the relevant output is like so:
+The issue is that the description property is "null" when doing a get request on the swagger assets.json file for the locally hosted server.  You can run the server by starting via the JettyBoot class, and the relevant output is like so:
 
 ```
 {
@@ -32,6 +32,7 @@ The issue is that the description property is "null" when doing a get request of
 ...
 }
 ```
+http://localhost:8080/swagger-specs/assets.json
 
 The correct output should be "User that created this asset", as specified on this line: 
 
